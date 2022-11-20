@@ -10,7 +10,11 @@ class HarvestCard extends StatelessWidget {
     return Column(
       children: [
         InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return HarvestPage();
+            }));
+          },
           child: Container(
               padding: EdgeInsets.all(8),
               width: 134,
